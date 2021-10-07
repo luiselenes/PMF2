@@ -4,6 +4,8 @@ class AgriculturalCompaniesController < ApplicationController
   # GET /agricultural_companies or /agricultural_companies.json
   def index
     @agricultural_companies = AgriculturalCompany.all
+
+    render json: @agricultural_companies
   end
 
   # GET /agricultural_companies/1 or /agricultural_companies/1.json
